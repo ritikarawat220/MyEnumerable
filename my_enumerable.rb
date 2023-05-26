@@ -12,6 +12,6 @@ module MyEnumerable
   def filter
     result = []
     each { |e| result << e if yield(e) }
-    result
+    result.inspect
   end
 end

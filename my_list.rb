@@ -4,6 +4,7 @@ class MyList
   include MyEnumerable
   def initialize(*arr)
     @list = arr
+    puts "#MyList: @list=#{@list.inspect}>"
   end
 
   def each
